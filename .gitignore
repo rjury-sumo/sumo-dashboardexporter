@@ -129,5 +129,6 @@ dmypy.json
 .pyre/
 
 # exports
-./export/*.pdf
-./export/*.png
+export/*.pdf
+export/*.png
+

@@ -132,3 +132,4 @@ dmypy.json
 export/*.pdf
 export/*.png
 
+.DS_Store

@@ -200,7 +200,7 @@ class sumoexporter(object):
         r['max_seconds'] = tries * seconds
         return r
 
-    def run_dashboard_export_job(self,report_id,timezone="America/Los_Angeles",exportFormat='Pdf',tries=60,seconds=1):
+    def run_dashboard_export_job(self,report_id,timezone="America/Los_Angeles",exportFormat='Pdf',tries=120,seconds=1):
         payload = self.define_export_dashboard_job(report_id,timezone=timezone,exportFormat=exportFormat)  
         job = self.export_dashboard(payload)
         logger.info (f"started job: {job}")

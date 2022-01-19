@@ -3,6 +3,13 @@ Export dashboards to pdf or png using the new report API
 see: https://api.au.sumologic.com/docs/#operation/generateDashboardReport
 
 example to export a dashboard as a pdf
+
+requires env vars as below:
+- LOGLEVEL optional python log level
+- SUMO_ACCESS_ID
+- SUMO_ACCESS_KEY
+- export directory 
+
 ```
 from sumoexporter.sumoexporter import sumoexporter
 exporter=sumoexporter(endpoint='au')
@@ -23,3 +30,8 @@ if export['status'] == 'Success':
     f.close()
 
 ```
+
+# todo
+- parameters for creds, endpoint, retries, poll seconds etc
+- support more parts of possible payload: arguments etc
+- report mode
